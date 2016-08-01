@@ -15,11 +15,15 @@
       </button>
     </form>
 
-    <!-- Text link -->
+    <!-- Text link
     <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Wagon</a>
+    -->
+    <%= link_to "Wagon", "https://www.lewagon.com", class: "navbar-wagon-item navbar-wagon-link" %>
 
-    <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+    <!-- Text link
+    <a href="team" class="navbar-wagon-item navbar-wagon-link">Team</a>
+     -->
+    <%= link_to "Team", "team.html", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Notification link-->
     <a href="" class="navbar-wagon-item navbar-wagon-link">
@@ -34,9 +38,21 @@
       <div class="dropdown">
         <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li>
+            <!-- <a href="#">Profile</a>
+            -->
+            <%= link_to "Profile", "#" %>
+          </li>
+          <li>
+            <!--<a href="#">Dashboard</a>
+            -->
+            <%= link_to "Dashboard", "#" %>
+          </li>
+          <li>
+            <!--<a href="#">Log Out</a>
+            -->
+            <%= link_to "Log Out", "#" %>
+          </li>
         </ul>
       </div>
     </div>
